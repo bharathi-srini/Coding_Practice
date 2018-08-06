@@ -60,10 +60,11 @@ while soup.find("h1",attrs={"class":"firstHeading"}).text != 'Philosophy':
     
     #Checking loops
     if url not in all_links:
+        all_links.append(url)
         continue 
     else:
         print('Stuck in loop')
         break
     
-    all_links.append(url)
+    
 
